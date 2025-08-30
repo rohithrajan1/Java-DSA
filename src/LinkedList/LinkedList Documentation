@@ -1,0 +1,85 @@
+📘 Linked List – Theory & Documentation
+🔹 What is a Linked List?
+
+A Linked List is a linear data structure in which elements (called nodes) are connected using pointers (references).
+Unlike arrays, the elements of a linked list are not stored in contiguous memory locations.
+
+Each node has two parts:
+Value → The actual data.
+Next → A pointer (reference) to the next node in the sequence.
+
+Example:
+Head → [10 | next] → [20 | next] → [30 | null]
+
+🔹 Characteristics of Linked Lists
+    Dynamic size (can grow or shrink at runtime).
+    Insertion and deletion are faster compared to arrays (no shifting required).
+    Accessing an element requires traversal from the head (no direct indexing like arrays).
+
+🔹 Advantages
+    ✅ No fixed size (unlike arrays).
+    ✅ Efficient for insertion and deletion.
+
+🔹 Disadvantages
+    ❌ Extra memory is required for storing pointers.
+    ❌ Accessing an element is slower (must traverse nodes one by one).
+
+🔹 Components of a Linked List
+    Head → The first node of the list.
+    Tail → The last node of the list.
+    Length → Tracks the total number of nodes.
+    Node → A structure containing data and a pointer to the next node.
+
+🔹 Operations Implemented
+    1. Append (Add at the End)
+        Creates a new node and attaches it to the last node.
+        Updates tail to point to the new node.
+
+    2. Prepend (Add at the Start)
+        Creates a new node and places it before the head.
+        Updates head to the new node.
+
+    3. Insert (Add at a Given Index)
+        Finds the node before the index.
+        Places the new node between two nodes.
+
+    4. Get (Retrieve by Index)
+        Traverses the list until the given index.
+        Returns the node at that position.
+
+    5. Set (Update Value)
+        Finds a node by index.
+        Changes its value.
+
+    6. Remove First (Delete First Node)
+        Updates head to the second node.
+        Disconnects the old head.
+
+    7. Remove Last (Delete Last Node)
+        Traverses to the second-last node.
+        Makes it the new tail.
+
+    8. Remove at Index
+        Finds the node before the index.
+        Updates pointers to skip over the node to be removed.
+
+    9. Reverse
+    Reverses the order of the linked list by reassigning pointers.
+    The last node becomes the head, and the first becomes the tail.
+
+🔹 Example Walkthrough
+    Imagine starting with an empty list:
+        null
+        Append(10) → 10->null
+        Append(20) → 10->20->null
+        Prepend(5) → 5->10->20->null
+        Insert(2, 15) → 5->10->15->20->null
+        Set(2, 50) → 5->10->50->20->null
+        RemoveFirst() → 10->50->20->null
+        RemoveLast() → 10->50->null
+        Reverse() → 50->10->null
+
+🔹 When to Use Linked Lists?
+    When frequent insertion and deletion are required.
+    When memory is fragmented (not contiguous).
+    When the size of the data structure is unknown in advance.
