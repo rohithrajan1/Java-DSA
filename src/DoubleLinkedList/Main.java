@@ -10,7 +10,7 @@ public class Main {
         dlist.Append(3);
         dlist.insert(1,9);
         dlist.set(2,5);
-        dlist.removeFirst();
+        dlist.removeLast();
 
         dlist.getList();
 

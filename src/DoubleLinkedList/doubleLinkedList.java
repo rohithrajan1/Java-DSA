@@ -105,6 +105,16 @@ public class doubleLinkedList {
 
 //-------------------------------------------------------------------------------
     public void removeLast(){
-
+        if(length == 1){
+            head = null;
+            tail = null;
+        }
+        else {
+            Node temp = tail;
+            tail = temp.prev;
+            tail.next = null;
+            temp.prev = null;
+        }
+        length--;
     }
 }
