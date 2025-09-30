@@ -5,8 +5,7 @@ public class stack {
     private int height;
 
     public stack(int value){
-        Node newNode = new Node(value);
-        top = newNode;
+        top = new Node(value);
         height = 1;
     }
 

@@ -8,7 +8,7 @@ public class Main {
         newstack.push(10);
         newstack.push(11);
         newstack.push(12);
-        newstack.printStack();
+//        newstack.printStack();
         System.out.println("-----------------------------------");
         newstack.pop();
         newstack.printStack();
